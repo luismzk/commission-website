@@ -1,0 +1,23 @@
+{
+  "name": "commission-website",
+  "version": "1.0.0",
+  "description": "Website to allow artists to notify followers whenever their commission queue is open",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luismzk/commission-website.git"
+  },
+  "keywords": [
+    "art",
+    "node"
+  ],
+  "author": "Nathan Graves & co",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luismzk/commission-website/issues"
+  },
+  "homepage": "https://github.com/luismzk/commission-website#readme"
+}
