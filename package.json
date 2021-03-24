@@ -4,6 +4,7 @@
   "description": "Website to allow artists to notify followers whenever their commission queue is open",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js -e js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/luismzk/commission-website/issues"
   },
-  "homepage": "https://github.com/luismzk/commission-website#readme"
+  "homepage": "https://github.com/luismzk/commission-website#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "handlebars-helpers": "^0.10.0",
+    "hbs": "^4.1.1",
+    "lodash": "^4.17.20",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
