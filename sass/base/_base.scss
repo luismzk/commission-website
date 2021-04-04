@@ -1,0 +1,32 @@
+
+// Unset browser options
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// defining 1rem
+	font-size: 62.5%;	// 62.5 for 10px, with 16 being the default
+
+	@include respond(tab-land){
+		font-size: 56.25%;		// 1rem = 9px, 9/16 = 56.25%
+	}
+
+	@include respond(tab-port){
+		font-size: 50%;		// 1rem = 8px, 8/16 = 50%
+	}
+
+	@include respond(phone){
+		font-size: 56.25%;		// 1rem = 9px, 9/16 = 56.25%
+	}
+
+}
+
+body {
+	box-sizing: border-box;
+	background-color: $color-website-background;
+}

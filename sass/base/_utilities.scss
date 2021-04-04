@@ -1,0 +1,18 @@
+
+// FOR UTILITIES AND MINOR DETAILS NOT CSS CLASS-WORTHY
+.u-center-text { text-align: center; }
+.u-right-text { text-align: right; }
+.u-left-text { text-align: left; }
+
+.u-margin-top-huge { margin-bottom: 10rem; }
+.u-margin-top-big { margin-bottom: 8rem; }
+
+.u-margin-bottom-big { margin-bottom: 8rem; }
+.u-margin-bottom-medium { margin-bottom: 2.4rem; }
+.u-margin-bottom-small { margin-bottom: 1.5rem; }
+
+.u-display-flex { display: flex; }
+.u-display-flex-y-center { 
+	display: flex!important;
+	align-items: center!important;
+}

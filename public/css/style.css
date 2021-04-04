@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+/*
+0 - 375px				Medium phones
+375 - 600px				Phones
+600 - 900px		 	Table portrait
+900 - 1200px  	Table landscape
+1200 - 1800 		normal design
+1800px+		 			Big desktop
+
+$breakpoint argument choices 
+- phone-medium
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base - typography - general layout - grid - page layout - components
+1em = 16px
+em por razones de accesibilidad
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 56.25%; } }
+
+body {
+  box-sizing: border-box;
+  background-color: #F8F9FA; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #0C0E0F; }
+
+.heading-1, h1 {
+  color: #212529;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: -.5px; }
+  @media (max-width: 37.5em) {
+    .heading-1, h1 {
+      font-size: 4.4444rem;
+      line-height: 1.4;
+      letter-spacing: normal; } }
+  .heading-1--sub, h1--sub {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 500; }
+    @media (max-width: 37.5em) {
+      .heading-1--sub, h1--sub {
+        font-size: 1.555556rem; } }
+
+.heading-2, h2 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.21;
+  letter-spacing: -.5px; }
+  @media (max-width: 37.5em) {
+    .heading-2, h2 {
+      font-size: 3.92rem; } }
+
+.heading-3, h3 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.21;
+  letter-spacing: -.5px; }
+  @media (max-width: 37.5em) {
+    .heading-3, h3 {
+      font-size: 3.36rem; } }
+
+.heading-4, h4 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.5; }
+  @media (max-width: 37.5em) {
+    .heading-4, h4 {
+      font-size: 3.125rem; } }
+
+.heading-5, h5 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.5; }
+  @media (max-width: 37.5em) {
+    .heading-5, h5 {
+      font-size: 2.24rem; } }
+
+.heading-6, h6 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.5; }
+  @media (max-width: 37.5em) {
+    .heading-6, h6 {
+      font-size: 1.89rem; } }
+
+.article-card {
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.5; }
+  .article-card--tall, .article-card--wide {
+    font-weight: 700;
+    color: #212529;
+    line-height: 1.5; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-right-text {
+  text-align: right; }
+
+.u-left-text {
+  text-align: left; }
+
+.u-margin-top-huge {
+  margin-bottom: 10rem; }
+
+.u-margin-top-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 2.4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-display-flex {
+  display: flex; }
+
+.u-display-flex-y-center {
+  display: flex !important;
+  align-items: center !important; }
+
+/*@import "./components/anchor";
+@import "./components/button";
+@import "./components/card";
+@import "./components/category";
+@import "./components/editor";
+@import "./components/input";
+@import "./components/modal";
+@import "./components/select";
+@import "./components/textarea";
+
+/*@import "./pages/blogView";
+@import "./pages/landing";
+@import "./pages/userProfile";*/
+.row {
+  max-width: 100%;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
+  .row .col-1-of-2 {
+    width: calc( (100% - 6rem) / 2); }
+    @media (max-width: 56.25em) {
+      .row .col-1-of-2 {
+        width: 50%; } }
+  .row .col-1-of-3 {
+    width: calc( (100% - 6rem * 2) / 3); }
+    @media (max-width: 56.25em) {
+      .row .col-1-of-3 {
+        width: 33.3333%; } }
+  .row .col-2-of-3 {
+    width: calc( ((100% - 6rem * 2) / 3) * 2 + 6rem); }
+    @media (max-width: 56.25em) {
+      .row .col-2-of-3 {
+        width: 66.6666%; } }
+  .row .col-1-of-4 {
+    width: calc( (100% - 6rem * 3) / 4); }
+    @media (max-width: 56.25em) {
+      .row .col-1-of-4 {
+        width: 25%; } }
+  .row .col-2-of-4 {
+    width: calc( ((100% - 6rem * 3) / 4) * 2 + 6rem); }
+    @media (max-width: 56.25em) {
+      .row .col-2-of-4 {
+        width: 50%; } }
+  .row .col-3-of-4 {
+    width: calc( ((100% - 6rem * 3) / 4) * 3 + (6rem * 2)); }
+    @media (max-width: 56.25em) {
+      .row .col-3-of-4 {
+        width: 75%; } }
