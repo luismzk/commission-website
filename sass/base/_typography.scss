@@ -7,7 +7,7 @@ body {
 }
 
 .heading-1, h1 {
-	color: $color-grey-dark-2;
+	color: $color-grey-dark-1;
 	font-size: 6.4rem;
 	font-weight: 700;
 	line-height: 1.19;
@@ -35,7 +35,7 @@ body {
 .heading-2, h2 {
 	font-size: 5.6rem;
 	font-weight: 700;
-	color: $color-grey-dark-2;
+	color: $color-detail-3;
 	line-height: 1.21;
 	letter-spacing: -.5px;
 
@@ -48,7 +48,7 @@ body {
 .heading-3, h3 {
 	font-size: 4.8rem;
 	font-weight: 700;
-	color: $color-grey-dark-2;
+	color: $color-grey-dark-1;
 	line-height: 1.21;
 	letter-spacing: -.5px;
 
@@ -61,7 +61,7 @@ body {
 .heading-4, h4 {
 	font-size: 4rem;
 	font-weight: 700;
-	color: $color-grey-dark-2;
+	color: $color-grey-dark-1;
 	line-height: 1.5;
 
 	@include respond(phone) {
@@ -72,7 +72,7 @@ body {
 .heading-5, h5 {
 	font-size: 3.2rem;
 	font-weight: 700;
-	color: $color-grey-dark-2;
+	color: $color-grey-dark-1;
 	line-height: 1.5;
 
 	@include respond(phone) {
@@ -83,26 +83,10 @@ body {
 .heading-6, h6 {
 	font-size: 2.4rem;
 	font-weight: 700;
-	color: $color-grey-dark-2;
+	color: $color-grey-dark-1;
 	line-height: 1.5;
 
 	@include respond(phone) {
 		font-size: 1.89rem;
 	}
 }
-
-.article-card {
-
-	font-weight: 700;
-	color: $color-grey-dark-2;
-	line-height: 1.5;
-
-
-	&--tall, &--wide {
-		font-weight: 700;
-		color: $color-grey-dark-2;
-		line-height: 1.5;
-	}
-
-}
-

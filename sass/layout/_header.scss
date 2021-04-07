@@ -1,0 +1,50 @@
+
+.landing-header {
+	height: 75.6rem;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba($color-grey-dark-1, 0.7), 
+		rgba($color-grey-dark-1, 0.7)), 
+		url("https://res.cloudinary.com/atoping/image/upload/v1617768836/landing/60937233_p0_yradmz.png");	// cargo la imagen pequena para resolucion normal
+	background-size: cover;
+	background-position: center;
+
+	&__header {
+		padding: 1.8rem 8.4rem;
+		background-color: transparent;
+		text-align: right;
+		display: flex;
+		align-items: center;
+
+		&--logo {
+			height: 2.4rem;
+		}
+
+		& > .btn--primary {
+			margin-left: auto;
+			width: 8%;
+		}
+
+	}
+
+	&__text-box {
+
+		padding-left: 8.4rem;
+		width: 50%;
+		margin-top: 8rem;
+
+		&--main {
+			font-size: 6.4rem;
+			color: $color-white;
+			font-weight: 900;
+			display: block;
+			margin-bottom: 2.4rem;
+		}
+
+		&--sub {
+			font-size: 4.2rem;
+			color: $color-white;
+			font-weight: 500;
+		}
+	}
+}

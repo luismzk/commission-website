@@ -1,0 +1,52 @@
+
+.featured {
+	margin-top: 5.5rem;
+	padding-left: 4.2rem;
+	padding-right: 4.2rem;
+
+	&__artist {
+		height: 40.5rem;
+		width: 25%;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+
+		&--img{
+			height: 40.5rem;
+			width: 100%;
+			object-fit: cover;
+			border-radius: 0.5rem;
+			transition: all .2s;
+
+			&:hover {
+				filter: blur(2px) brightness(75%);
+
+				& + .featured__artist--name {
+					opacity: 1;
+					transform: translate(-50%, -50%);
+				}
+			}
+
+		}
+
+		&:not(:last-child) {
+			margin-right: 10.9rem;
+		}
+
+		&--name {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, 20%);
+			color: $color-white;
+			font-size: 2.4rem;
+			text-align: center;
+			opacity: 0;
+			transition: all .2s;	
+			backface-visibility: hidden; /* arregla vibraciones en las animaciones*/
+
+		}
+
+
+	}
+}
